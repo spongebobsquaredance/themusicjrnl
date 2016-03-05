@@ -1,0 +1,433 @@
+/*
+Theme Name: Music Journal
+Theme URI: http://spongebobsquaredance.github.io/portfolio/wordpress
+Author: Bee's Knees Media
+Author URI: http://spongebobsquaredance.github.io/portfolio
+Description: A basic white, pink, and gray theme perfect for small journal-style site.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, text, journal
+Text Domain: musicjournal 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset
+================================ */
+
+body {
+	font-family: 'Forum', cursive;
+	line-height: 1.5;
+	background: #eee;
+	min-width: 1100px;
+}
+article,
+.nav_postset .prev_posts a,
+.nav_postset .next_posts a {
+	background: #fff;
+	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+	box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+}
+p {
+	margin-bottom: 1em;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Typographic Scale
+================================ */
+
+h1 {
+	font-size: 4em;
+}
+h2 {
+	font-size: 2em; /* Was 3em */
+}
+h3 {
+	font-size: 1.125em; /* Was 2.25em */
+}
+h4 {
+	font-size: 0.875em; /* Was 1.5em */
+}
+h5 {
+	font-size: 1.125em;
+}
+h6 {
+	font-size: .875em;
+}
+p {
+	font-size: 1.125em;
+}
+
+/* Header
+================================ */
+
+header {
+	text-align: left;
+	background: #fff;
+	padding-bottom: 1px;
+	-webkit-box-shadow: 0 4px 10px -4px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 4px 10px -4px rgba(0,0,0,0.05);
+	box-shadow: 0 4px 10px -4px rgba(0,0,0,0.05);
+}
+header h1 {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 4em;
+	padding-top: 35px;
+}
+header h1 span {
+	font-family: 'Mr De Haviland', cursive;
+	padding-left: 5px;
+}
+header ul {
+	text-align: left;
+	font-size: 21px;
+}
+header ul li {
+	display: inline-block;
+	margin-right: 2em;
+}
+.innerHeader {
+	width: 85%;
+	margin: 0 auto;
+}
+.innerHeader h1 {
+	margin: 0 15px;
+}
+.innerHeader ul {
+	margin: 0 0 4px 15px;
+}
+.innerHeader h1 {
+	margin-bottom: -20px;
+}
+.social_links {
+	text-align: left;
+	display: inline;
+	float: right;
+	margin-top: -63px;
+}
+.social_links h3 {
+	margin-top: -5px;
+	font-size: 1em;
+}
+.social_links a:hover,
+header ul li a:hover,
+#main a:hover,
+footer a:hover {
+	border-bottom: 2px solid #FFC4BC;
+}
+hr {
+	border: 0;
+	height: 6px;
+	background: #FFC4BC;
+	opacity: .8;
+	margin-top: -5px;
+}
+
+/* Main Page 
+================================ */
+
+#wrapper {
+	width: 85%;
+	margin: 25px auto 36px auto; 
+	overflow: hidden;
+}
+#main {
+	width: 75%;
+	float: left;
+}
+#main article p {
+	margin-top: 18px;
+}
+#main article+article {
+	margin-top: 36px;
+	margin-bottom: 36px;
+}
+#main h3,
+.album h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}	
+#main h3,
+.album h3,
+#main h4,
+.album h4,
+#main h6 {
+	text-transform: uppercase;
+}
+.innerArticle {
+	margin: 0 15px;
+	padding-bottom: 1px;
+}
+.innerArticle h4:first-of-type,
+.innertxtwrapper h4:first-of-type {
+	color: #F09E96;
+}
+
+/* Inspiration Section: Video
+============================= */
+
+.outervideowrapper,
+.outertxtwrapper {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+.innervideowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+} 
+.innervideowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Inspiration Section: Text
+============================= */
+
+.innertxtwrapper {
+	width: 92%;
+	margin: 0 auto;
+}
+.innertxtwrapper h4 {
+	margin-top: 0;
+}
+.innertxtwrapper p {
+	line-height: 1.2;
+	margin-top: 0;
+}
+
+/* In Rotation Section
+================================ */
+aside {
+	width: 22%;
+	float: right;
+}
+.inrotation .innerArticle {
+	margin: 0 10px;
+}
+.inrotation h4:first-of-type {
+	color: black;
+}
+.inrotation h3 {
+	font-size: .875em;
+}
+.inrotation h4 {
+	font-size: .8em;
+}
+.album {
+	margin-top: 18px;
+}
+.album div {
+	margin-top: 18px;
+}
+img {
+	max-width: 100%;
+}
+
+/* Multiple Project and Post Pages
+================================== */
+.mult_post h3 {
+	padding-top: 10px;
+}
+.mult_post h2 {
+	background: #fff;
+	padding-left: 15px;
+	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.03);
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.03);
+	box-shadow: 0 2px 2px rgba(0,0,0,0.03);
+	text-transform: uppercase;
+}
+.mult_post hr {
+	border: 0;
+	height: 3px;
+	background: #FFC4BC;
+	opacity: .8;
+	margin-top: -3px;
+	margin-bottom: 18px;
+}
+.mult_post .innerArticle h4:first-of-type,
+.mult_post .innertxtwrapper h4:first-of-type {
+	color: black;
+}
+.singlecol .mult_post .innerArticle h4:first-of-type {
+	padding-top: 0;
+}
+.nav_postset {
+	overflow: hidden;
+	margin-top: 18px;
+}
+.nav_postset .prev_posts {
+	float: left;
+}
+.nav_postset .next_posts {
+	float: right;
+}
+.nav_postset .prev_posts a,
+.nav_postset .next_posts a {
+	padding: 3px 15px;
+}
+
+/* Single Project and Post Pages
+================================= */
+.singlecol #main {
+	float: none;
+	margin: 0 auto;
+}
+#firstp:first-letter {
+	font-size: 3em;
+	line-height: .6;
+	margin-top: 14px;
+	margin-right: 5px;
+	float: left;
+}
+.singlecol .innerArticle {
+	overflow: hidden;
+}
+.singlecol .innerArticle h3 {
+	font-size: 1.7em;
+}
+.singlecol .innerArticle h4 {
+	font-size: 1em;
+}
+.singlecol .innerArticle h4:first-of-type {
+	padding-top: 18px;
+}
+.singlecol .innerArticle p {
+	line-height: 1.5;
+}
+.endlinks {
+	text-align: center;
+	font-size: 1.125em;
+	margin-top: 54px;
+}
+.endlinks a {
+	margin-bottom: 18px;
+}
+.endlinks a:hover {
+	margin-bottom: -3px;
+}
+.endlinks a:first-of-type {
+	float: left;
+}
+.endlinks a:last-of-type {
+	float: right;
+}
+
+/* About Page
+================================ */
+.about img {
+	padding: 18px 0;
+}
+.mrdehaviland {
+	font-family: 'Mr De Haviland', cursive;
+	font-size: 2.5em;
+	text-align: right;
+	margin-right: 20%;
+	margin-bottom: 18px;
+}
+
+/* Footer
+================================ */
+footer {
+	background: #fff;
+	clear: both;
+	overflow: hidden;
+	-webkit-box-shadow: 0 -4px 10px -4px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 -4px 10px -4px rgba(0,0,0,0.05);
+	box-shadow: 0 -4px 10px -4px rgba(0,0,0,0.05);
+}
+.innerfooter {
+	width: 85%;
+	margin: 0 auto;
+}
+.linkbox {
+	float: left;
+	width: 20%;
+}
+footer div.linkbox:nth-child(2) {
+	margin: 0 20%;
+}
+.linkbox h3 {
+	margin-top: 18px;
+	border-bottom: 3px solid #FFC4BC;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+footer h4 {
+	display: inline-block;
+}
+footer h4.devcompany {
+	float: right;
+	display: block;
+}
+footer h4 {
+	padding-top: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #777;
+	padding-bottom: 20px;
+}
+.copyright a,
+.devcompany a {
+	color: #777;
+}
