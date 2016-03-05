@@ -33,13 +33,12 @@
 						<h3>Connect</h3>
 						<ul>
 							<li><a href="http://twitter.com/cmd545">Twitter</a></li>
-							<li><a href="http://www.youtube.com">YouTube</a></li>
-							<li><a href="http://www.google.com">Email</a></li>
+							<li><a href="mailto:carrie@themusicjrnl.com">Email</a></li>
 						</ul>
 					</div>
 				</div>
-				<h4 class="copyright">Copyright 2014 <a href="<?php bloginfo('url');?>">The Music Journal</a></h4>
-				<h4 class="devcompany">Site by: <a href="http://spongebobsquaredance.github.io/portfolio">Carrie MacDonald Design & Development</a></h4>
+				<h4 class="copyright">Copyright 2016 <a href="<?php bloginfo('url');?>">The Music Journal</a></h4>
+				<h4 class="devcompany">Site by: <a href="http://carriem.tech">Carrie MacDonald | Design & Development</a></h4>
 			</div>
 		</footer>
 	</body>

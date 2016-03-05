@@ -157,11 +157,14 @@ header ul li {
 	text-align: left;
 	display: inline;
 	float: right;
-	margin-top: -63px;
+	margin-top: -48px;
 }
 .social_links h3 {
 	margin-top: -5px;
 	font-size: 1em;
+}
+.social_links h3 + h3 {
+	margin-top: -1px;
 }
 .social_links a:hover,
 header ul li a:hover,
